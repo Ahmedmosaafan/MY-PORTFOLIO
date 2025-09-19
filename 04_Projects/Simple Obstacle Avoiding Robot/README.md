@@ -61,5 +61,5 @@ An autonomous robot built with Arduino that can detect and avoid obstacles using
 - Add Bluetooth/Wi-Fi for manual control option.
 
 
- ## 📸 Demo
-![Project Demo](REAL_LIFE PHOTO.jpg)
+## 📸 Demo
+![Robot Demo](REAL_LIFE%20PHOTO.jpg)
