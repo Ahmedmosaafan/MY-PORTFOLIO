@@ -43,6 +43,8 @@ It can perform the four basic arithmetic operations: **addition, subtraction, mu
 - Output on LCD: `Result: 20`  
 
 ---
+📸 Demo
+![Project Demo](REAL_LIFE_PHOTO_CALCULATOR.jpg)
 
 ## 👨‍💻 Author
 - **Ahmed Mosaafan**  
