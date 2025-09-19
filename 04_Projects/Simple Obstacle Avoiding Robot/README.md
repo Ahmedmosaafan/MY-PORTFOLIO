@@ -62,4 +62,4 @@ An autonomous robot built with Arduino that can detect and avoid obstacles using
 
 
 ## 📸 Demo
-![Robot Demo](REAL_LIFE%20PHOTO.jpg)
+<img src="REAL_LIFE%20PHOTO.jpg" alt="Robot Demo" width="250">
