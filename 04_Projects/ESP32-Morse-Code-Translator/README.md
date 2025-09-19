@@ -1,0 +1,76 @@
+# ⚡ ESP32 Interactive Morse Code Station
+### 🚀 A Next-Level IoT Project | محطة شفرة مورس تفاعلية متصلة بالشبكة
+
+This isn’t just a simple embedded project – it’s a **full IoT system** that transforms **Morse code into live text**, displayed both on a **physical LCD** and a **real-time web page** hosted directly on the ESP32.  
+
+It combines **electronics, real-time programming, networking, and HCI (Human-Computer Interaction)** into one feature-rich project.  
+A perfect showcase for **engineering students, IoT enthusiasts, and embedded systems portfolios**. 🔥  
+
+---
+
+## 🌟 Why This Project is Cool?
+
+✅ **Bridges history with modern IoT** – bringing the 1800s Morse code into the era of Wi-Fi & web servers.  
+✅ **Multi-output system** – Local display + global (network) broadcast.  
+✅ **Smart input handling** – debouncing, timing analysis, backspace/clear features.  
+✅ **Professional-grade modular code** – clean, scalable, and responsive (non-blocking).  
+✅ **Portfolio-ready** – This is not “just blink an LED” – it’s a **show-off project** that proves mastery of hardware & software integration.  
+
+---
+
+## 🚀 Features
+
+- **Real-time Morse Code Translation** (dot/dash → text instantly).  
+- **Web Server Integration** – live page auto-refreshing every 5s on any device in the same Wi-Fi.  
+- **Dual 16x2 LCD Display** – text wrapping, supports up to 32 chars before reset.  
+- **Smart Editing Button**:  
+  - Short press = **Backspace**  
+  - Long press = **Clear All**  
+- **LED + Buzzer Feedback** – tactile rhythm guidance.  
+- **Software Debouncing** – flawless input accuracy.  
+- **Configurable Speed** – adjust `dotTime` for user pace.  
+
+---
+
+## 🛠️ Hardware Components
+
+- ESP32 Development Board  
+- 16x2 I2C LCD  
+- 2 Push Buttons  
+- LED (with 220Ω resistor)  
+- Active Buzzer  
+- Breadboard + Jumper Wires  
+
+---
+
+## 🔌 Wiring
+
+| Component              | ESP32 Pin |
+| ---------------------- | ---------- |
+| Morse Input Button     | GPIO 27    |
+| Clear/Backspace Button | GPIO 32    |
+| LED (Feedback)         | GPIO 12    |
+| Buzzer                 | GPIO 14    |
+| LCD SDA                | GPIO 26    |
+| LCD SCL                | GPIO 25    |
+| Power (5V)             | VIN / 5V   |
+| Ground                 | GND        |
+
+---
+
+## ⚙️ Setup & Installation
+
+1. Install **Arduino IDE** + ESP32 board package.  
+2. Add `LiquidCrystal_I2C` library.  
+3. Update Wi-Fi credentials in code:
+   ```cpp
+   const char* ssid = "YourWiFi";
+   const char* password = "YourPassword";
+
+ ---
+
+ ## 📸 Demo
+
+ <img src="REAL_LIFE_PHOTO.jpg" width="50%">
+
+   
