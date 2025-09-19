@@ -44,8 +44,7 @@ It can perform the four basic arithmetic operations: **addition, subtraction, mu
 
 ---
 📸 Demo
-![Project Demo](REAL_LIFE_PHOTO_CALCULATOR.jpg)
-
+<img src="REAL_LIFE_PHOTO_CALCULATOR.jpg" width="50%">
 ## 👨‍💻 Author
 - **Ahmed Mosaafan**  
   Student of Mechatronics Engineering ⚙️  
