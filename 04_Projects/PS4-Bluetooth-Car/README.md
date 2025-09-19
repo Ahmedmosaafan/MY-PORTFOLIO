@@ -60,7 +60,7 @@ Once connected:
 ---
 
 ## 📸 Demo
-(Add a photo or video of your car in action here)  
+![Car Demo](demo.jpg)
 
 ---
 
