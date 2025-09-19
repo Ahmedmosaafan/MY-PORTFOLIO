@@ -58,4 +58,8 @@ An autonomous robot built with Arduino that can detect and avoid obstacles using
 - Add servo motor to rotate ultrasonic sensor for wider detection.  
 - Implement PID control for smoother motor speed.  
 - Use rechargeable Li-ion batteries with TP4056 charging module.  
-- Add Bluetooth/Wi-Fi for manual control option.  
+- Add Bluetooth/Wi-Fi for manual control option.
+
+
+ ## 📸 Demo
+![Project Demo](REAL_LIFE PHOTO.jpg)
