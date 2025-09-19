@@ -60,8 +60,7 @@ Once connected:
 ---
 
 ## 📸 Demo
-![Car Demo](demo.jpg)
-
+<img src="demo.jpg" width="50%">
 ---
 
 ## 📂 Code
