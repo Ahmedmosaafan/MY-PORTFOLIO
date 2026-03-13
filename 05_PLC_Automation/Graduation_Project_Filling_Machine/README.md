@@ -29,4 +29,4 @@ An industrial-scale automated production line designed to optimize the liquid pa
 * `/Documentation`: Project reports and electrical wiring diagrams.
 
 ---
-*Developed by [Your Name] - Focused on Industrial Automation and Digital Transformation.*
+*Developed by [Ahmed saafan and his Team] - Focused on Industrial Automation and Digital Transformation.*
