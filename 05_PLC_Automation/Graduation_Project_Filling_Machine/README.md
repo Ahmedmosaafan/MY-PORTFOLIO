@@ -23,6 +23,9 @@ An industrial-scale automated production line designed to optimize the liquid pa
 * **HMI Dashboard:** Real-time monitoring of production rates and system status.
 * **Fault Diagnostics:** Integrated alarm system for bottle jams or low fluid levels.
 
+## 📄 Documentation
+* [View Full Project Proposal (PDF)](./Project_Documentation.pdf) 
+
 ## 📁 Repository Structure
 * `/CAD_Designs`: Includes SolidWorks parts and assembly files.
 * `/PLC_Code`: TIA Portal project backups and exported SCL blocks.
