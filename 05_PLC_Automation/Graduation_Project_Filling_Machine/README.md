@@ -21,10 +21,12 @@ An industrial-scale automated production line designed to optimize the liquid pa
 
 ### 1. Mechanical Layout (System Overview)
 ![System Layout](./System_Layout.png)
+
 [cite_start]*This diagram shows the complete production line layout, including the bottle feeder, conveyor, and the integrated filling, capping, and labeling stations.* [cite: 171, 172, 175]
 
 ### 2. Control Block Diagram (PLC Integration)
 ![Control Block Diagram](./Control_Block_Diagram.png)
+
 [cite_start]*Detailed architecture showing how the Siemens PLC processes inputs from photoelectric and gap sensors to control filling pumps, stepper drives, and actuators.* [cite: 199, 208, 213, 214]
 
 ## 🚀 Key Features (In Development)
@@ -33,7 +35,7 @@ An industrial-scale automated production line designed to optimize the liquid pa
 * **Fault Diagnostics:** Integrated alarm system for bottle jams or low fluid levels.
 
 ## 📄 Documentation
-* [View Full Project Proposal (PDF)](./Project_Documentation.pdf) 
+* [View Full Project Proposal (PDF)](./Project_Documentation.pdf.pdf) 
 
 ## 📁 Repository Structure
 * `/CAD_Designs`: Includes SolidWorks parts and assembly files.
