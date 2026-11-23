@@ -20,14 +20,6 @@ Mechatronics Engineering graduate specializing in **Industrial Automation and Ma
 
 I demonstrated my technical capabilities through an intensive engineering internship at Edita Food Industries, focusing on **high-speed packaging lines, maintenance, sensor calibration, and P&ID schematics**. I am passionate about optimizing control systems and troubleshooting complex electro-mechanical equipment, and I build practical digitalization tools that reduce machine downtime.
 
----
-
-## Results at a Glance
-
-| Filling accuracy | Part lookup time | Real shop-floor users |
-|:---:|:---:|:---:|
-| **≤ 2% error**<br>closed-loop PLC filling | **< 5 seconds**<br>down from ~20 minutes | **6 technicians**<br>**~500 spare parts** |
-| *Graduation project* | *Industrial Spare-Parts Catalog App* | *Edita Food Industries internship* |
 
 ---
 
