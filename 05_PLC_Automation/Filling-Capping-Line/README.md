@@ -15,8 +15,6 @@
 
 <div align="center">
 
-[<img src="simulation_thumb.jpg" width="600" alt="Watch the simulation">](Simulation.mp4)
-
 ▶️ **[Watch the simulation](Simulation.mp4)**
 
 </div>
@@ -27,12 +25,9 @@
 
 <div align="center">
 
-[<img src="real_thumb.jpg" width="600" alt="Watch the real system">](REAL_LIFE_VIDEO.mp4)
-
 ▶️ **[Watch the real system running](REAL_LIFE_VIDEO.mp4)**
 
 </div>
-
 ---
 
 ## 💡 The Idea
@@ -84,9 +79,5 @@ I focused on the **heart of the line: the filling stage**.
 ## 📩 Contact
 
 📧 ahmed.saafan.eng@gmail.com
-🔗 [LinkedIn](www.linkedin.com/in/ahmed-saafan-a37401320)
-
-
----
-
+🔗 [LinkedIn](https://www.linkedin.com/in/ahmed-saafan-a37401320)
 <div align="center">⭐ Thanks for stopping by!</div>
