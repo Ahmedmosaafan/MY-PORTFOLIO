@@ -6,8 +6,9 @@
 
 **B.Sc. Mechatronics Engineering, Fayoum University (Class of 2026)**
 
+*PLC Programming (Siemens TIA Portal) · Industrial Maintenance & Automation · Industrial Digitalization · 3D CAD (SolidWorks)*
 
-[About](#about-me) · [Featured Projects](#featured-engineering-projects) · [Portfolio Directory](#portfolio-directory) · [Skills](#technical-skills) ·  [Contact](#contact)
+[About](#about-me) · [Featured Projects](#featured-engineering-projects) · [Portfolio Directory](#portfolio-directory) · [Skills](#technical-skills)  · [Contact](#contact)
 
 </div>
 
@@ -39,9 +40,8 @@ I demonstrated my technical capabilities through an intensive engineering intern
 
 **My role and impact:** I engineered, calibrated, and tested the **precision liquid-filling stage**, achieving a filling volume error of **≤ 2%** using closed-loop flow feedback and PLC control.
 
-**Tech stack:** `Siemens S7-1200 PLC` · `TIA Portal (LAD/FBD)` · `SolidWorks 3D CAD` · `Capacitive Proximity & Flow Meter Sensors` · `Solenoid Valves`
 
-**[Open the project folder with videos and CAD →](./05_PLC_Automation/Automated_Filling_Packaging_Line)**
+**[Open the project folder with videos and CAD →](./05_PLC_Automation/Filling-Capping-Line)**
 
 ---
 
@@ -64,7 +64,6 @@ I demonstrated my technical capabilities through an intensive engineering intern
 - Actively used by **6 maintenance technicians** across **~500 spare parts**
 - Reduces **MTTI / MTTR** during machine breakdowns
 
-**Tech stack:** `Google AppSheet` · `Microsoft Excel` · `Google Drive` (3-tier architecture)
 
 **[Read the full case study with demo video →](./06_Industrial_Digitalization)**
 
@@ -94,12 +93,12 @@ I demonstrated my technical capabilities through an intensive engineering intern
 | **PLC & Industrial Automation** | Siemens TIA Portal, `S7-1200` / `S7-300` / `S7-1500`, `LAD`, `FBD`, `PLCSIM` |
 | **Control & Drives** | Classic control circuits, motor drives |
 | **Instrumentation & Pneumatics** | Industrial sensors (proximity, capacitive, photoelectric, flow), pneumatics, solenoid valves |
-| **3D CAD** | SolidWorks |
+| **3D CAD** | SolidWorks (CSWA certified) |
 | **Industrial Digitalization** | Google AppSheet, Microsoft Excel, Google Drive, data modeling for maintenance tools |
 | **Maintenance** | Preventive and corrective maintenance |
 
----
 
+---
 
 ## Contact
 
@@ -107,5 +106,6 @@ I demonstrated my technical capabilities through an intensive engineering intern
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ahmed%20M.%20Saafan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ahmed-saafan-a37401320)
 [![Email](https://img.shields.io/badge/Email-Ahmed.saafan.eng%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:Ahmed.saafan.eng@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-%40Ahmedmosaafan-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ahmedmosaafan)
 
 </div>
