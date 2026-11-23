@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🔧 Industrial Spare-Parts Catalog & Lookup System
+# Industrial Spare-Parts Catalog & Lookup System
 
-### A mobile-first, bilingual digital catalog that cuts maintenance search time on the factory floor
+### A mobile-first, bilingual digital catalog that cuts spare-part identification time during machine breakdowns
 
 ![Platform](https://img.shields.io/badge/Platform-iOS%20%7C%20Android-blue)
 ![Built With](https://img.shields.io/badge/Built%20With-Google%20AppSheet-4285F4)
@@ -18,30 +18,48 @@
 
 ---
 
-## 📑 Table of Contents
+## At a Glance
 
-1. [Executive Overview](#-executive-overview)
-2. [The Problem: A Shop-Floor Bottleneck](#-the-problem-a-shop-floor-bottleneck)
-3. [The Solution](#-the-solution)
-4. [Live Demo](#-live-demo)
-5. [Key Features](#-key-features)
-6. [User Workflow (Step by Step)](#-user-workflow-step-by-step)
-7. [System Architecture](#-system-architecture)
-8. [Data Schema](#-data-schema)
-9. [Key Engineering Decisions](#-key-engineering-decisions)
-10. [Operational Impact](#-operational-impact)
-11. [Skills Demonstrated](#-skills-demonstrated)
-12. [Confidentiality Disclaimer](#-confidentiality-disclaimer)
+| | |
+|---|---|
+| **Problem** | Technicians had to search paper files or wait for the storekeeper to look up a part code, which took **at least ~20 minutes** per request. That time counts directly toward machine repair time (MTTR). |
+| **Solution** | A mobile-first, photo-backed, bilingual (EN/AR) spare-parts catalog with search, filtering, and offline access, built and deployed independently. |
+| **Result** | Part lookup in **under 5 seconds** from the technician's phone, with no dependency on paper files or on the storekeeper's computer. |
+
+| Metric | Value |
+|---|---|
+| Active users | **6 maintenance technicians** |
+| Catalog size | **~500 parts**, expandable at any time through in-app entry |
+| Lookup time | **< 5 seconds** (search or category filter) |
+| Platforms | iOS and Android |
+| Delivery | Designed, built, and deployed solo within a 2-month internship |
 
 ---
 
-## 🎯 Executive Overview
+## Table of Contents
+
+1. [Executive Overview](#executive-overview)
+2. [The Problem: A Shop-Floor Bottleneck](#the-problem-a-shop-floor-bottleneck)
+3. [The Solution](#the-solution)
+4. [Live Demo](#live-demo)
+5. [Key Features](#key-features)
+6. [User Workflow (Step by Step)](#user-workflow-step-by-step)
+7. [System Architecture](#system-architecture)
+8. [Data Schema](#data-schema)
+9. [Key Engineering Decisions](#key-engineering-decisions)
+10. [Operational Impact](#operational-impact)
+11. [Skills Demonstrated](#skills-demonstrated)
+12. [Confidentiality Disclaimer](#confidentiality-disclaimer)
+
+---
+
+## Executive Overview
 
 During my 2-month Industrial Maintenance & Automation internship at **Edita Food Industries**, I independently designed, built, and deployed a **mobile Spare-Parts Catalog Application** for maintenance technicians.
 
-The tool replaces manual logs and scattered records with a single searchable, photo-backed, bilingual (English/Arabic) catalog that works on any phone, including inside production halls with weak network coverage.
+The tool replaces paper files and storekeeper lookups with a single searchable, photo-backed, bilingual (English/Arabic) catalog that works on any phone, including inside production halls with weak network coverage. It is in active use by a team of **6 technicians** and currently holds **~500 parts**, a number that grows as technicians add parts directly from the field.
 
-> **In one sentence:** I turned an unstructured, paper-and-memory-dependent spare-parts lookup into a structured, searchable, mobile-first digital system, designed, built, and deployed end to end as a solo intern project.
+> **In one sentence:** I turned a slow, paper-and-person-dependent spare-parts lookup into a structured, searchable, mobile-first digital system, designed, built, and deployed end to end as a solo intern project.
 
 | | |
 |---|---|
@@ -52,20 +70,25 @@ The tool replaces manual logs and scattered records with a single searchable, ph
 
 ---
 
-## 🚨 The Problem: A Shop-Floor Bottleneck
+## The Problem: A Shop-Floor Bottleneck
 
-During **urgent machine breakdowns** and **preventive maintenance shifts**, technicians lost valuable time on a task that should take seconds: *identifying the right spare part.*
+During **urgent machine breakdowns** and **preventive maintenance shifts**, technicians lost valuable time on a task that should take seconds: *identifying the right spare part and its code.*
 
-- Part specifications, models, and warehouse locations lived in **manual logs and scattered records**.
-- Verifying a single component meant **searching across multiple sources** while a machine sat idle.
+To find a part code, technicians had two options, both slow:
+
+- **Search through paper files** by hand, or
+- **Ask the storekeeper**, who would look it up on his computer. Getting the answer took **at least ~20 minutes**.
+
+On top of the delay:
+
+- Specifications, models, and part references were **scattered across files and individuals**.
 - Without a visual reference, there was a real risk of **selecting or installing the wrong part**.
-- Knowledge about parts was spread across people and paper rather than in one shared, searchable place.
 
-**Result:** unnecessary downtime during the moments when speed matters most.
+Because this waiting happens while the machine is down, those ~20 minutes are **part of the Mean Time To Repair (MTTR)**, which makes them the most expensive minutes of the breakdown.
 
 ---
 
-## 💡 The Solution
+## The Solution
 
 A **mobile-first Spare-Parts Catalog Application** built around one design goal: **get a technician from "what part do I need?" to a verified answer in under 5 seconds, on the shop floor, with one hand.**
 
@@ -73,7 +96,7 @@ Every design choice (search-first UI, photo verification, bilingual labels, offl
 
 ---
 
-## 🎬 Live Demo
+## Live Demo
 
 <div align="center">
 
@@ -81,28 +104,28 @@ Every design choice (search-first UI, photo verification, bilingual labels, offl
 
 *Short walkthrough: search → open item → verify photo → add / edit a part.*
 
-**[▶ Open the demo video directly](https://github.com/Ahmedmosaafan/MY-PORTFOLIO/raw/main/06_Industrial_Digitalization/assets/spare_parts_app_demo.mp4)**
+**[Open the demo video directly](https://github.com/Ahmedmosaafan/MY-PORTFOLIO/raw/main/06_Industrial_Digitalization/assets/spare_parts_app_demo.mp4)**
 
 </div>
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 | Feature | What it does | Why it matters |
 |---|---|---|
-| ⚡ **Sub-5-Second Lookup** | Instant search plus multi-criteria filtering by component name, technical description, or subsystem category (**Sensors, Pneumatics, Temperature Controllers, Valves, Motors, PLC Modules**) | Minimizes time spent searching during breakdowns |
-| 🖼️ **Visual Verification** | A reference photo, taken on the floor, is attached to every component entry | Prevents wrong-part selection and installation errors |
-| 🌐 **Bilingual Records (EN / AR)** | Every field is labeled in English and Arabic, and each part carries both an English and an Arabic name | Usable by the whole maintenance crew, not only English readers |
-| ➕ **Field Data Entry** | Quick-add workflow via the **`+`** button lets authorized engineers and technicians add parts straight from their phone, with real-time cloud synchronization | The catalog stays current without a separate admin step |
-| ✏️ **In-App Editing** | Any field of an existing part can be corrected from its detail screen, including retaking the photo | Errors are fixed at the source, immediately |
-| 🧾 **Source Traceability** | Each record stores the manufacturer catalog file and page it was derived from | Every entry can be audited back to its documentation |
-| ✅ **Mandatory-Field Validation** | Item Code and Image are required before a record can be saved | Prevents incomplete, unverifiable entries |
-| 📶 **Offline Caching** | Part photos and details are cached for use in areas with weak connectivity | Reliable access inside production halls |
+| **Sub-5-Second Lookup** | Instant search plus multi-criteria filtering by component name, technical description, or subsystem category (**Sensors, Pneumatics, Temperature Controllers, Valves, Motors, PLC Modules**) | Removes the ~20-minute wait for a part code during breakdowns |
+| **Visual Verification** | A reference photo, taken on the floor, is attached to every component entry | Prevents wrong-part selection and installation errors |
+| **Bilingual Records (EN / AR)** | Every field is labeled in English and Arabic, and each part carries both an English and an Arabic name | Usable by the whole maintenance crew, not only English readers |
+| **Field Data Entry** | Quick-add workflow via the **`+`** button lets authorized engineers and technicians add parts straight from their phone, with real-time cloud synchronization | The catalog (~500 parts today) keeps growing without a separate admin step |
+| **In-App Editing** | Any field of an existing part can be corrected from its detail screen, including retaking the photo | Errors are fixed at the source, immediately |
+| **Source Traceability** | Each record stores the manufacturer catalog file and page it was derived from | Every entry can be audited back to its documentation |
+| **Mandatory-Field Validation** | Item Code and Image are required before a record can be saved | Prevents incomplete, unverifiable entries |
+| **Offline Caching** | Part photos and details are cached for use in areas with weak connectivity | Reliable access inside production halls |
 
 ---
 
-## 📱 User Workflow (Step by Step)
+## User Workflow (Step by Step)
 
 ### Step 1: Browse, Search & Filter the Catalog
 
@@ -176,14 +199,14 @@ From the detail view, the edit action reopens the same form pre-filled. Any fiel
                           data incorrect?      Retrieve & install
                      ┌────────────────────┐    the correct part
                      │ "+" add new part   │
-                     │ or ✏️ edit entry   │
+                     │ or edit entry      │
                      │ (auto-synced)      │
                      └────────────────────┘
 ```
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 The system follows a clean **3-tier architecture**, with each tier chosen to be maintainable by plant personnel without specialized development skills.
 
@@ -215,9 +238,9 @@ The system follows a clean **3-tier architecture**, with each tier chosen to be 
 
 ---
 
-## 🗄️ Data Schema
+## Data Schema
 
-A single, flat, well-typed table keeps the data model simple to maintain and fast to query.
+A single, flat, well-typed table keeps the data model simple to maintain and fast to query, even as the catalog grows past its current ~500 records.
 
 ```
 ┌────────────────────────────────────────────────────────────────┐
@@ -225,7 +248,7 @@ A single, flat, well-typed table keeps the data model simple to maintain and fas
 ├──────────────────────┬───────────────┬─────────────────────────┤
 │ Field                │ Type          │ Description             │
 ├──────────────────────┼───────────────┼─────────────────────────┤
-│ 🔑 Item_Code  (req.) │ Text (PK)     │ Unique part identifier  │
+│ [PK] Item_Code (req.)│ Text          │ Unique part identifier  │
 │ Part_Name_EN         │ Text          │ English component name  │
 │ Part_Name_AR         │ Text          │ Arabic component name   │
 │ Part_Description_EN  │ Text          │ Technical description / │
@@ -235,15 +258,15 @@ A single, flat, well-typed table keeps the data model simple to maintain and fas
 │                      │               │ Valves | Motors |       │
 │                      │               │ PLC Modules             │
 │ Source_File_Page     │ Text          │ Origin catalog file/page│
-│ Image        (req.)  │ Image         │ ──▶ Google Drive file   │
+│ Image        (req.)  │ Image         │ -> Google Drive file    │
 └──────────────────────┴───────────────┴─────────────────────────┘
 ```
 
-> ℹ️ Field names reflect the real schema. All **values** shown in this repository are sanitized placeholders (see [Confidentiality Disclaimer](#-confidentiality-disclaimer)).
+> Field names reflect the real schema. All **values** shown in this repository are sanitized placeholders (see [Confidentiality Disclaimer](#confidentiality-disclaimer)).
 
 ---
 
-## 🧠 Key Engineering Decisions
+## Key Engineering Decisions
 
 ### 1. Offline-First Capability
 Factory production halls are often **network dead zones**. Rather than assuming connectivity, I configured **offline data caching** so part details and reference photos remain available without a signal. Changes sync when the connection returns. A catalog that fails exactly where it is needed is worse than none, so reliability on the shop floor was the top priority.
@@ -264,49 +287,50 @@ Text descriptions alone can look identical across similar parts. Attaching a **r
 A **Source (File / Page)** field links each entry back to its manufacturer documentation, and **mandatory Item Code and Image fields** block incomplete records at the point of entry.
 
 ### 6. Right-Sized Tooling (Low-Code, 3-Tier Separation)
-I chose **AppSheet + Excel + Google Drive** deliberately: fast to deploy within a 2-month window, cross-platform, and **maintainable by plant staff without specialized development skills**. Separating UI, data, and asset storage keeps each layer independently replaceable. If the plant later adopts a full CMMS or ERP, the structured schema can migrate cleanly.
+I chose **AppSheet + Excel + Google Drive** deliberately: fast to deploy within a 2-month window, cross-platform, and **maintainable by plant staff without specialized development skills**. The engineering value is in the data model, the taxonomy, and the workflow design, not in the amount of code written. Separating UI, data, and asset storage keeps each layer independently replaceable. If the plant later adopts a full CMMS or ERP, the structured schema can migrate cleanly.
 
 ### 7. Controlled Field Data Entry
 Add, edit, and delete actions are available to **authorized engineers and technicians**, balancing the speed of in-the-field updates against data quality and governance.
 
 ---
 
-## 📈 Operational Impact
+## Operational Impact
 
-The core operational metric targeted is **Mean Time to Identify (MTTI)**: the time from "a part is needed" to "the correct part is confirmed."
+Part identification sits inside the repair timeline, so every minute spent finding a part code adds directly to **Mean Time To Repair (MTTR)**. This project targets that segment, the **Mean Time to Identify (MTTI)** the correct part.
 
 | Before | After |
 |---|---|
-| Searching manual logs and scattered records | Single searchable mobile catalog |
-| Specs and models in different places | Unified record: description + category + source + photo |
+| Search paper files, or ask the storekeeper to look it up on his computer | Search the catalog from the technician's own phone |
+| Part code retrieval took **at least ~20 minutes** (approximate, based on shop-floor practice) | Lookup in **under 5 seconds** |
+| Dependent on file access or on the storekeeper's availability | Self-service, available to all 6 technicians at any time |
 | No visual confirmation, risk of wrong part | Reference photo on every item |
-| Dependent on connectivity or desk access | Offline-capable, on the shop floor |
+| Dependent on connectivity or desk access | Offline-capable on the shop floor |
 | English-only or paper-based references | Bilingual EN/AR records |
-| Knowledge held by individuals | Shared, continuously growing team resource |
+| Knowledge held by individuals | Shared catalog of ~500 parts that grows with use |
 
 **Outcomes:**
-- ⏱️ **Reduced MTTI** through sub-5-second search and filtering during breakdowns and PM shifts
-- 🛡️ **Fewer identification and installation errors** through visual verification
-- 🔄 **A living catalog** that grows as technicians add and correct parts directly from the field
-- 🏭 **A step toward industrial digitalization**: a practical, low-cost digital tool adopted at the point of work
+- **Reduced MTTI and MTTR contribution:** the identification step drops from a wait of ~20+ minutes to a lookup of a few seconds. These timings are approximate figures from shop-floor practice, not a formal controlled study.
+- **Fewer identification and installation errors** through visual verification.
+- **A living catalog** that grows as technicians add and correct parts directly from the field.
+- **A practical step toward industrial digitalization:** a low-cost tool adopted at the point of work.
 
 ---
 
-## 🛠️ Skills Demonstrated
+## Skills Demonstrated
 
-`Industrial Digitalization` · `Maintenance Engineering` · `Mobile App Development (No-Code)` · `Relational Data Modeling` · `Systems Architecture` · `Bilingual UX for Industrial Environments` · `Offline-First Design` · `Data Validation & Traceability` · `Independent Project Delivery`
+`Industrial Digitalization` · `Maintenance Engineering` · `MTTR / MTTI Analysis` · `Mobile App Development (No-Code)` · `Relational Data Modeling` · `Systems Architecture` · `Bilingual UX for Industrial Environments` · `Offline-First Design` · `Data Validation & Traceability` · `Independent Project Delivery`
 
 ---
 
-## 🔒 Confidentiality Disclaimer
+## Confidentiality Disclaimer
 
-This repository is public. **All records, part names, item codes, descriptions, and images shown in the screenshots and examples use sanitized or placeholder data, and identifying codes have been redacted.** No real ERP codes, internal inventory quantities, prices, or sensitive company warehouse information are included. This case study documents the **engineering approach and system design only**.
+This repository is public. **All records, part names, item codes, descriptions, and images shown in the screenshots and examples use sanitized or placeholder data, and identifying codes have been redacted.** No real ERP codes, internal inventory quantities, prices, or sensitive company warehouse information are included. The catalog size and user count are stated only as general project scale. This case study documents the **engineering approach and system design only**.
 
 ---
 
 <div align="center">
 
-**Ahmed M. Saafan** · Mechatronics Engineer · 
+**Ahmed M. Saafan** · Mechatronics Engineer · [GitHub: @Ahmedmosaafan](https://github.com/Ahmedmosaafan)
 
 ## 📩 Contact
 
