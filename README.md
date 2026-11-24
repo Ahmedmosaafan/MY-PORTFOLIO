@@ -6,7 +6,6 @@
 
 **B.Sc. Mechatronics Engineering, Fayoum University (Class of 2026)**
 
-*PLC Programming (Siemens TIA Portal) · Industrial Maintenance & Automation · Industrial Digitalization · 3D CAD (SolidWorks)*
 
 [About](#about-me) · [Featured Projects](#featured-engineering-projects) · [Portfolio Directory](#portfolio-directory) · [Skills](#technical-skills)  · [Contact](#contact)
 
@@ -85,7 +84,6 @@ I demonstrated my technical capabilities through an intensive engineering intern
 | **PLC & Industrial Automation** | Siemens TIA Portal, `S7-1200` / `S7-300` / `S7-1500`, `LAD`, `FBD`, `PLCSIM` |
 | **Control & Drives** | Classic control circuits, motor drives |
 | **Instrumentation & Pneumatics** | Industrial sensors (proximity, capacitive, photoelectric, flow), pneumatics, solenoid valves |
-| **3D CAD** | SolidWorks (CSWA certified) |
 | **Industrial Digitalization** | Google AppSheet, Microsoft Excel, Google Drive, data modeling for maintenance tools |
 | **Maintenance** | Preventive and corrective maintenance |
 
