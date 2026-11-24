@@ -24,13 +24,13 @@
 |---|---|
 | **Problem** | Technicians had to search paper files or wait for the storekeeper to look up a part code, which took **at least ~20 minutes** per request. That time counts directly toward machine repair time (MTTR). |
 | **Solution** | A mobile-first, photo-backed, bilingual (EN/AR) spare-parts catalog with search, filtering, and offline access, built and deployed independently. |
-| **Result** | Part lookup in **under 5 seconds** from the technician's phone, with no dependency on paper files or on the storekeeper's computer. |
+| **Result** | Part lookup in **under 10 seconds** from the technician's phone, with no dependency on paper files or on the storekeeper's computer. |
 
 | Metric | Value |
 |---|---|
 | Active users | **6 maintenance technicians** |
 | Catalog size | **~500 parts**, expandable at any time through in-app entry |
-| Lookup time | **< 5 seconds** (search or category filter) |
+| Lookup time | **< 10 seconds** (search or category filter) |
 | Platforms | iOS and Android |
 | Delivery | Designed, built, and deployed solo within a 2-month internship |
 
